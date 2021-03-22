@@ -1,7 +1,7 @@
 from bson import ObjectId
 from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://test:cipTest@cipchatapp.41mmy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = MongoClient("api link")
 
 chat_db = client.get_database("chatDB")
 user_messages = chat_db.get_collection('messages')
